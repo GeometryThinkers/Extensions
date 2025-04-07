@@ -33,10 +33,6 @@
       border-radius: 10px;
       background: #e8f0fe;
     }
-    .paypal-qr, .wallet-img {
-      max-width: 180px;
-      margin: 10px 0;
-    }
     .paypal-email, .wallet-address {
       font-family: monospace;
       background: white;
@@ -94,11 +90,11 @@
 </head>
 <body>
   <div class="container">
-    <img src="https://via.placeholder.com/100x100?text=GT" alt="Geometry Thinkers Logo" class="logo">
+    <img src="https://github.com/GeometryThinkers/Extensions/blob/main/geometrythinkers.png?raw=true" alt="Geometry Thinkers Logo" class="logo">
     <h1>Thank You for Using Our Extension!</h1>
     <p>We truly appreciate your support. If you'd like to help us continue building awesome tools, consider making a donation below.</p>
 
-    <!-- Crypto First -->
+    <!-- Crypto Donations -->
     <div class="crypto-box">
       <h2>Donate with Crypto</h2>
 
@@ -113,72 +109,62 @@
 
       <div id="usdt" class="wallet-box active">
         <p><strong>USDT</strong> (TRC20)</p>
-        <img src="/mnt/data/file-UpA1SLjF1vQn7udsmkW1Zc" class="wallet-img" alt="USDT TRC QR">
         <div class="wallet-address" id="usdtTrc">TLZF6EEWHTyRFycUX2RSXHpTE4im5dTcvJ</div>
         <button class="copy-btn" onclick="copyToClipboard('usdtTrc')">Copy Address</button>
 
-        <hr style="margin: 20px 0; border: none; border-top: 1px solid #ccc;">
+        <hr>
 
         <p><strong>USDT</strong> (BEP-20)</p>
-        <img src="/mnt/data/file-FdiRnXB9g7reqstskTFmZH" class="wallet-img" alt="USDT BEP QR">
         <div class="wallet-address" id="usdtBep">0xa4006aefc6a6ae046cbfe2e601b9f4ca97b7e26b</div>
         <button class="copy-btn" onclick="copyToClipboard('usdtBep')">Copy Address</button>
       </div>
 
       <div id="bnb" class="wallet-box">
         <p><strong>BNB</strong> (BEP-20)</p>
-        <img src="/mnt/data/file-RuGWViXy2ZuThCXAhr5gdb" class="wallet-img" alt="BNB QR">
         <div class="wallet-address" id="bnbAddr">0xa4006aefc6a6ae046cbfe2e601b9f4ca97b7e26b</div>
         <button class="copy-btn" onclick="copyToClipboard('bnbAddr')">Copy Address</button>
       </div>
 
       <div id="usdc" class="wallet-box">
         <p><strong>USDC</strong> (Polygon)</p>
-        <img src="/mnt/data/file-KfBCNUTfvkzBXWMcWuNnwp" class="wallet-img" alt="USDC Polygon QR">
         <div class="wallet-address" id="usdcPoly">0xa4006aefc6a6ae046cbfe2e601b9f4ca97b7e26b</div>
         <button class="copy-btn" onclick="copyToClipboard('usdcPoly')">Copy Address</button>
 
-        <hr style="margin: 20px 0; border: none; border-top: 1px solid #ccc;">
+        <hr>
 
         <p><strong>USDC</strong> (BEP-20)</p>
-        <img src="/mnt/data/file-RuGWViXy2ZuThCXAhr5gdb" class="wallet-img" alt="USDC BEP QR">
         <div class="wallet-address" id="usdcBep">0xa4006aefc6a6ae046cbfe2e601b9f4ca97b7e26b</div>
         <button class="copy-btn" onclick="copyToClipboard('usdcBep')">Copy Address</button>
       </div>
 
       <div id="btc" class="wallet-box">
         <p><strong>BTC</strong> (BEP-20)</p>
-        <img src="/mnt/data/file-U7audgVwqoQ5QWRW4bBmCg" class="wallet-img" alt="BTC QR">
         <div class="wallet-address" id="btcAddr">0xa4006aefc6a6ae046cbfe2e601b9f4ca97b7e26b</div>
         <button class="copy-btn" onclick="copyToClipboard('btcAddr')">Copy Address</button>
       </div>
 
       <div id="xrp" class="wallet-box">
         <p><strong>XRP</strong> (XRP Ledger)</p>
-        <img src="/mnt/data/file-G3Qze5XWc33S23eS8dt8u7" class="wallet-img" alt="XRP QR">
         <div class="wallet-address"><strong>Address:</strong> rNxp4h8apvRis6mJf9Sh8C6iRxfrDWN7AV</div>
         <div class="wallet-address"><strong>Tag:</strong> 459382237</div>
       </div>
 
       <div id="eth" class="wallet-box">
         <p><strong>ETH</strong> (Arbitrum)</p>
-        <img src="/mnt/data/file-FdiRnXB9g7reqstskTFmZH" class="wallet-img" alt="ETH QR">
         <div class="wallet-address" id="ethArb">0xa4006aefc6a6ae046cbfe2e601b9f4ca97b7e26b</div>
         <button class="copy-btn" onclick="copyToClipboard('ethArb')">Copy Address</button>
 
-        <hr style="margin: 20px 0; border: none; border-top: 1px solid #ccc;">
+        <hr>
 
         <p><strong>ETH</strong> (Optimism)</p>
-        <img src="/mnt/data/file-FdiRnXB9g7reqstskTFmZH" class="wallet-img" alt="ETH QR">
         <div class="wallet-address" id="ethOpt">0xa4006aefc6a6ae046cbfe2e601b9f4ca97b7e26b</div>
         <button class="copy-btn" onclick="copyToClipboard('ethOpt')">Copy Address</button>
       </div>
     </div>
 
-    <!-- PayPal Second -->
+    <!-- PayPal -->
     <div class="paypal-box">
       <h2>Donate via PayPal</h2>
-      <img src="/mnt/data/file-32AmhphbKS6K2PkBVNZ4f9" alt="PayPal QR" class="paypal-qr">
       <div class="paypal-email">lsprutamassaker@gmail.com</div>
       <br>
       <a href="https://paypal.me/geometrythinkers?country.x=GB&locale.x=en_GB" class="paypal-button" target="_blank">Donate with PayPal</a>
