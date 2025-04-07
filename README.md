@@ -1,28 +1,43 @@
-# Geometry Thinkers – Donation Page
+# 🧠 Geometry Thinkers – Donation Page
 
-Welcome to the official donation page for **Geometry Thinkers**.
+Welcome to the official **Geometry Thinkers** donation page.
 
-We built this to thank our amazing users and give you easy, transparent ways to support the tools and extensions we create.
-
----
-
-## 💰 Support Us
-
-You can donate using:
-
-- **Crypto**: USDT (TRC20/BEP20), BNB, USDC (Polygon/BEP20), BTC (BEP20), ETH (Arbitrum/Optimism), XRP
-- **PayPal**: [paypal.me/geometrythinkers](https://paypal.me/geometrythinkers?country.x=GB&locale.x=en_GB)
-
-🎁 Every donation helps us stay indie, keep the lights on, and build better tools for you.
+This project is a simple static site that thanks our users and offers a clean, transparent way to support us financially.
 
 ---
 
 ## 🌐 Live Website
 
-Check out the donation page here:  
-👉 [https://geometrythinkers.github.io/Extensions](https://geometrythinkers.github.io/Extensions)
+👉 [Visit the Donation Page](https://geometrythinkers.github.io/Extensions/)
 
 ---
 
-Thank you for supporting us 💜  
-— The Geometry Thinkers team
+## 💰 How You Can Support Us
+
+You can donate using:
+
+### 📦 Crypto
+
+We accept:
+
+- USDT (TRC20 & BEP20)
+- BNB (BEP20)
+- USDC (Polygon & BEP20)
+- BTC (BEP20)
+- ETH (Arbitrum & Optimism)
+- XRP (XRP Ledger)
+
+All crypto addresses are visible on the website, and you can easily copy them.
+
+### 🅿️ PayPal
+
+You can also donate via PayPal:  
+👉 [paypal.me/geometrythinkers](https://paypal.me/geometrythinkers?country.x=GB&locale.x=en_GB)
+
+---
+
+## 🤝 Thank You
+
+Your support helps us stay independent, improve our tools, and keep everything free and open.
+
+**— The Geometry Thinkers Team 💜**
