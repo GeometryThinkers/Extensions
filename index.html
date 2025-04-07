@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You – Geometry Thinkers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      margin: 0;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .logo {
+      max-width: 100px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    .paypal-box, .crypto-box {
+      margin: 30px 0;
+      padding: 20px;
+      border-radius: 10px;
+      background: #e8f0fe;
+    }
+    .paypal-email, .wallet-address {
+      font-family: monospace;
+      background: white;
+      display: inline-block;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .paypal-button {
+      display: inline-block;
+      margin-top: 10px;
+      background: #0070ba;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    .crypto-tabs {
+      margin-top: 10px;
+    }
+    .crypto-tabs button {
+      background: white;
+      color: #333;
+      padding: 10px 15px;
+      margin: 5px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .crypto-tabs button.active {
+      border: 3px solid #007bff;
+      font-weight: bold;
+    }
+    .wallet-box {
+      display: none;
+      margin-top: 25px;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .wallet-box.active {
+      display: block;
+    }
+    .copy-btn {
+      background: #28a745;
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://github.com/GeometryThinkers/Extensions/blob/main/geometrythinkers.png?raw=true" alt="Geometry Thinkers Logo" class="logo">
+    <h1>Thank You for Using Our Extension!</h1>
+    <p>We truly appreciate your support. If you'd like to help us continue building awesome tools, consider making a donation below.</p>
+
+    <!-- Crypto Donations -->
+    <div class="crypto-box">
+      <h2>Donate with Crypto</h2>
+
+      <div class="crypto-tabs">
+        <button onclick="showWallet('usdt')" class="active">USDT</button>
+        <button onclick="showWallet('bnb')">BNB</button>
+        <button onclick="showWallet('usdc')">USDC</button>
+        <button onclick="showWallet('btc')">BTC</button>
+        <button onclick="showWallet('xrp')">XRP</button>
+        <button onclick="showWallet('eth')">ETH</button>
+      </div>
+
+      <div id="usdt" class="wallet-box active">
+        <p><strong>USDT</strong> (TRC20)</p>
+        <div class="wallet-address" id="usdtTrc">TLZF6EEWHTyRFycUX2RSXHpTE4im5dTcvJ</div>
+        <button class="copy-btn" onclick="copyToClipboard('usdtTrc')">Copy Address</button>
+
+        <hr>
+
+        <p><strong>USDT</strong> (BEP-20)</p>
+        <div class="wallet-address" id="usdtBep">0xa4006aefc6a6ae046cbfe2e601b9f4ca97b7e26b</div>
+        <button class="copy-btn" onclick="copyToClipboard('usdtBep')">Copy Address</button>
+      </div>
+
+      <div id="bnb" class="wallet-box">
+        <p><strong>BNB</strong> (BEP-20)</p>
+        <div class="wallet-address" id="bnbAddr">0xa4006aefc6a6ae046cbfe2e601b9f4ca97b7e26b</div>
+        <button class="copy-btn" onclick="copyToClipboard('bnbAddr')">Copy Address</button>
+      </div>
+
+      <div id="usdc" class="wallet-box">
+        <p><strong>USDC</strong> (Polygon)</p>
+        <div class="wallet-address" id="usdcPoly">0xa4006aefc6a6ae046cbfe2e601b9f4ca97b7e26b</div>
+        <button class="copy-btn" onclick="copyToClipboard('usdcPoly')">Copy Address</button>
+
+        <hr>
+
+        <p><strong>USDC</strong> (BEP-20)</p>
+        <div class="wallet-address" id="usdcBep">0xa4006aefc6a6ae046cbfe2e601b9f4ca97b7e26b</div>
+        <button class="copy-btn" onclick="copyToClipboard('usdcBep')">Copy Address</button>
+      </div>
+
+      <div id="btc" class="wallet-box">
+        <p><strong>BTC</strong> (BEP-20)</p>
+        <div class="wallet-address" id="btcAddr">0xa4006aefc6a6ae046cbfe2e601b9f4ca97b7e26b</div>
+        <button class="copy-btn" onclick="copyToClipboard('btcAddr')">Copy Address</button>
+      </div>
+
+      <div id="xrp" class="wallet-box">
+        <p><strong>XRP</strong> (XRP Ledger)</p>
+        <div class="wallet-address"><strong>Address:</strong> rNxp4h8apvRis6mJf9Sh8C6iRxfrDWN7AV</div>
+        <div class="wallet-address"><strong>Tag:</strong> 459382237</div>
+      </div>
+
+      <div id="eth" class="wallet-box">
+        <p><strong>ETH</strong> (Arbitrum)</p>
+        <div class="wallet-address" id="ethArb">0xa4006aefc6a6ae046cbfe2e601b9f4ca97b7e26b</div>
+        <button class="copy-btn" onclick="copyToClipboard('ethArb')">Copy Address</button>
+
+        <hr>
+
+        <p><strong>ETH</strong> (Optimism)</p>
+        <div class="wallet-address" id="ethOpt">0xa4006aefc6a6ae046cbfe2e601b9f4ca97b7e26b</div>
+        <button class="copy-btn" onclick="copyToClipboard('ethOpt')">Copy Address</button>
+      </div>
+    </div>
+
+    <!-- PayPal -->
+    <div class="paypal-box">
+      <h2>Donate via PayPal</h2>
+      <div class="paypal-email">lsprutamassaker@gmail.com</div>
+      <br>
+      <a href="https://paypal.me/geometrythinkers?country.x=GB&locale.x=en_GB" class="paypal-button" target="_blank">Donate with PayPal</a>
+    </div>
+
+    <p style="margin-top: 40px;">Thank you again for your generous support!</p>
+  </div>
+
+  <script>
+    function showWallet(id) {
+      const wallets = document.querySelectorAll('.wallet-box');
+      wallets.forEach(w => w.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+
+      const tabs = document.querySelectorAll('.crypto-tabs button');
+      tabs.forEach(t => t.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+
+    function copyToClipboard(id) {
+      const text = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Wallet address copied to clipboard!");
+      });
+    }
+  </script>
+</body>
+</html>
